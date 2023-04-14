@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<h1>탐색 선택자</h1>
+	<ul id="menu1">
+		<li>내용1-1</li>
+		<li>내용1-2</li>
+		<li>내용1-3</li>
+	</ul>
+	<ul id="menu2">
+		<li>내용2-1</li>
+		<li>내용2-2</li>
+		<li id="list3">내용2-3</li>
+	</ul>
+    <script src="./jquery-3.6.4.min.js"></script>
+
+    <script>
+        // 여러개의 태그를 한꺼번에 선택할때 사용(querySeletorAll과 같음)
+        $(function(){
+
+            var idxNum= $("li").index($('#list3'));
+            console.log(idxNum) //인덱스의 넘버값 구하기
+
+            // $.each($('#menu2 li'),function(i,e){
+            //     console.log(i+":", $(this));
+
+            // });
+
+            // var obj = [{
+            //     area: "서울"
+            // },{
+            //     area:"부산"
+            // },{
+            //     area:"전주"
+            // }];
+            // for(const o of obj) {
+            //     console.log(o);
+            // }
+
+            // obj.forEach(function(element){
+            //     console.log(element)
+            
+            // $(obj).each(function(index, element){
+            //     console.log(`${index}: ${element}`)
+            //     console.log(index + ":"+ JSON.stringify(element))
+            //     console.log(element)
+            // });
+            // })
+        })
+
+    </script>
+    
+</body>
+</html>

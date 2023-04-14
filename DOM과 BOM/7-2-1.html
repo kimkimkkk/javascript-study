@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <textarea></textarea>
+    <script>
+        const text= document.querySelector('textarea')
+        const h1=   document.querySelector('h1')
+    
+        text.addEventListener('keyup',function(){
+            //글자를 작성하다가 손을 땠을때 이벤트 발생
+            const value = text.value; //입력한 값을 가져온다
+
+            h1.textContent = `글자수 : ${value.length}`
+        });
+    
+    
+    
+    </script>
+    
+</body>
+</html>

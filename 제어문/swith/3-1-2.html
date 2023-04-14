@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 현재 시간을 구하기
+        const date = new Date();
+        const hour = date.getHours(); //0~23
+
+        document.write(hour,"<br>")
+        if (hour < 12) {s
+             document.write('오전입니다.');
+        }
+        
+        if (hour >= 12) {
+            document.write('오후입니다.');
+        }
+
+    </script>
+</body>
+</html>

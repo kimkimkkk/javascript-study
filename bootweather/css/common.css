@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.wrap {
+  background-color: rgb(255, 253, 253) !important;
+}
+
+/* 헤더 */
+
+.header__bg {
+  height: 500px;
+  background: url(../images/1024x450.jpg);
+  background-size: cover;
+  display: flex;
+  /* 수직정렬 */
+  flex-direction: column;
+  /* 가운데 정렬 */
+  align-items: center;
+  justify-content: center;
+}
+
+.header__bg > .location-card {
+  color: white !important;
+  background-color: rgba(33, 37, 41, 0.5) !important;
+}
+
+.header__bg > .location-card .card-subtitle {
+  color: white !important;
+}
+
+footer {
+  height: 150px;
+}
+
+footer > div:nth-child(1) {
+  background-color: rgb(227, 227, 227);
+  text-align: left;
+  /* 두개 같이 같은사이즈주면 수직 가운데 정렬 */
+  height: 50px;
+  line-height: 50px;
+}
+
+footer > div:nth-child(2) {
+  background-color: white;
+  height: 100px;
+  padding-top: 30px;
+}
+
+footer > div:nth-child(2) > div {
+  font-size: 13px;
+  text-align: center;
+}
+
+footer a {
+  color: black !important;
+  text-decoration: none !important;
+}

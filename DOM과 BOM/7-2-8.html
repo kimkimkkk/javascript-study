@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"> cm = 
+    <span></span>
+    <select>
+        <option value="10">mm</option>
+        <option value="0.01">m</option>
+        <option value="0.393701">inch</option>
+    </select>
+    <script>
+        const select = document.querySelector("select")
+        const input = document.querySelector('input')
+        const span = document.querySelector('span')
+        let inputValue; //인풋값 받기
+
+        // 1) select박스에서 change가 일어났을 때 값을 가져온다.
+        select.addEventListener('change', function(e){
+            
+            //select박스에서 선택한 값을 가져오는 방법
+            const options= e.currentTarget.options;
+            const index = options.selectedIndex;
+            console.log(options[index].textContent)
+
+            // console.log(options[index].value)
+            const numValue = Number(options[index].value)
+
+
+
+            // 2) cm를 알맞는 값으로 변환시켜준다.
+            let result = (numValue * inputValue).toFixed(2)
+            
+            console.log(result)
+            span.textContent = result;
+
+
+
+        })
+        //키보드에 입력한 input값을 가져오기
+        input.addEventListener('keyup',function(e){
+            inputValue = Number(e.currentTarget.value);
+
+            console.log(inputValue)
+            
+        })
+        
+        
+
+
+
+
+    </script>
+</body>
+</html>

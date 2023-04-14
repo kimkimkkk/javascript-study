@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1번 함수 정의
+        function func() {
+            console.log("함수 내부의 코드입니다..1")
+            console.log("함수 내부의 코드입니다..2")
+            console.log("함수 내부의 코드입니다..3")
+        }
+        //2번 함수 사용
+        func();
+        
+        console.log(typeof(func))
+        
+        // 익명 함수 : 이름 없는 함수
+        const func2 = function(){
+            console.log("함수 내부의 코드입니다..1")
+            console.log("함수 내부의 코드입니다..2")
+            console.log("함수 내부의 코드입니다..3")
+        }
+        func2()
+        console.log(typeof(func2))
+    </script>
+</body>
+</html>

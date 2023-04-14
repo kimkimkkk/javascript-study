@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var str1 = "안녕하세요.";
+        var str2 = '김건입니다.';
+        var hap= str1 + str2;
+        //  ''나 ""를 쓰면 문자형
+        var num1 = '1';
+        var num2 = '2';
+        //  안쓰면 숫자형
+        var num3 = 1;
+        var num4 = 2;
+
+
+
+        // +기호를 이용해 문자열 끼리 합침
+        document.write(str1 + str2);//안녕하세요. 김건입니다.
+        document.write('<br>');
+        document.write(hap);//안녕하세요. 김건입니다.
+        document.write('<br>');
+        document.write(num1+num2);//12
+        document.write('<br>');
+        document.write(num3+num4);//3
+        document.write('<br>');
+        // 중요, 더할때 하나라도 문자형이 있으면 다 문자로 인식한다.
+        document.write(num2+num4+num3);//221
+        document.write('<br>');
+        // 문장에'',""를 쓰고싶으면 안쓴 따움표를 쓰면 된다.
+        document.write('저는 "김건" 입니다.')
+        document.write('<br>');
+        // ""안에 ""를 쓰고싶으면 \를 쓰면 된다
+        document.write("저는 \"김건\" 입니다.")
+        
+        document.write('<br>');
+        document.write('<br>');
+        
+        
+    </script>
+</body>
+</html>

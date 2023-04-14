@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array1 = [1,4,9,16]
+
+        //배열.map(함수)
+        let arr1=array1.map(function(element,index,array){
+            //element: 배열의 각각의 값
+            //index: 인덱스 번호
+            //array: 배열 전체
+            console.log(`값: ${element}, 인덱스:${index}`)
+            return element *2;
+        })
+        //map은 return된 데이터들을 모아서 배열로 만들어준다.
+        console.log(`arr1: ${arr1}`)
+        //es6
+        let arr2= array1.map((item)=>item * 2)
+    </script>   
+</body>
+</html>

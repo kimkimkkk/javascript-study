@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button> 이동! </button>
+
+    <script>
+        //화면 해상도
+        var swidth = screen.width;
+        var sHeight = screen.height;
+
+        console.log(sHeight);
+        console.log(swidth);
+
+        
+        var sWidth2 = screen.availWidth;
+        var sHeight2 = screen.availHeight;
+
+        console.log(sWidth2);
+        console.log(sHeight2);
+
+
+        //주소가져오기
+        var loca = location.href;
+        console.log(loca)
+
+        const btn = document.querySelector('button');
+        btn.addEventListener('click',function(){
+            //클릭 했을때 네이버 이동
+            location.href = "http://www.naver.com";
+        });
+
+        const navi = navigator.userAgent;
+        console.log(navi)
+
+    </script>
+</body>
+</html>

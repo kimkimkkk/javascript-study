@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        function sample(...items) {//나머지 매개변수
+            console.log(items); //나머지 매개변수 사용
+        }
+
+        sample(1,2);
+        sample(1,2,3);
+        sample(1,2,3,4);
+        */
+        
+        //나머지 매개변수를 이용해 최소값 구하기
+
+        function min(...items){
+            let output = items[0];
+
+            for(const items of items){
+                if(output > items){
+                    output = items;
+                }
+
+            }
+            return output;
+
+        }
+        console.log(`최소값: ${min(52, 273, 32, 103, 275, 24, 57)}`)
+    </script>
+
+
+</body>
+</html>

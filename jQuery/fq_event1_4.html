@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var h1 = $ ('.img1').height();
+            console.log('ready:',h1)
+        })
+        $(window).on(function(e){
+        var h1 = $ ('.img1').height();
+        console.log('load:',h1)
+        })
+        // $(function(){
+        //     $('p').click(function(){
+        //         alert('hello!')
+        //     })
+        // })
+        // document.addEventListener('DOMContentLoaded', function(){}) //DOMContentLoaded는 모든걸 읽고 실행하겠다는 뜻
+        
+        // const ptag = document.querySelector('p')
+        // ptag.addEventListener('click', function(){
+            //     alert('hello!!!')
+            // })
+            </script>
+            <p>
+                <img src="http://place-hold.it/300X300" class="img1">
+            </p>
+</body>
+</html>
